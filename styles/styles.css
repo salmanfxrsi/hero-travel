@@ -9,11 +9,6 @@ body{
     margin: 0;
 }
 
-.container{
-    width: 90%;
-    margin: 6.25rem auto 0;
-}
-
 .button-primary{
     width: 174px;
     height: 52px;
@@ -29,6 +24,8 @@ body{
 
 /* Navbar */
 .nav-bar{
+    width: 90%;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,6 +64,73 @@ body{
     font-weight: 700;
 }
 
+.nav-options p {
+    cursor: pointer;
+}
+  
+/* Banner */
+.explore{
+    width: 90%;
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url(../Images/banner.png);
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6.625rem 0;
+}
+
+.explore-container{
+    max-width: 676px;
+    margin: 0 auto;
+}
+
+.explore-container h3{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;    
+}
+
+.explore-inputs{
+    max-width: 800px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3); 
+    margin: auto;
+    padding: 1rem; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-container p{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;  
+    margin-bottom: 4rem;  
+}
+
+.explore-inputs input,select{
+    width: 174px;
+    height: 52px;    
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;    
+}
+
+.explore-inputs button{
+    width: 174px;
+    height: 52px; 
+    border-radius: 8px;
+    background: rgb(255, 84, 0);    
+    color: rgb(255, 255, 255);   
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Popular */
+
+
 @media screen and (max-width:576px) {
 
 /* Navbar */
@@ -76,5 +140,9 @@ body{
 
 .nav-options-menu{
     display: block;
+    cursor: pointer;
 }
+
+
+
 }
