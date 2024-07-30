@@ -22,6 +22,19 @@ body{
     font-weight: 800;    
 }
 
+.text-one{
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.text-two{
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
 /* Navbar */
 .nav-bar{
     width: 90%;
@@ -129,6 +142,27 @@ body{
 }
 
 /* Popular */
+.popular{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    gap: 3.313rem;
+    justify-content: space-between;
+}
+
+.popular-container li{
+    margin-bottom: 1.5rem; 
+}
+
+.popular-image img {
+    border-radius: 16px;
+    max-width: 540px;
+    max-height: 550px;
+}
+
+.popular-container button{
+    margin-top: 0.5rem;
+}
 
 
 @media screen and (max-width:576px) {
@@ -143,6 +177,20 @@ body{
     cursor: pointer;
 }
 
+/* Banner */
+.explore{display: none;}
 
+/* Popular */
+.popular{
+    flex-direction: column;
+}
 
+.popular-image{
+    text-align: center;
+}
+
+.popular-image img {
+    max-width: 335px;
+    max-height: 342px;
+}
 }
