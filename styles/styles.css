@@ -199,6 +199,7 @@ body{
 .destination-card img{
     width: 100%;
     height: 300px;
+    filter: brightness(90%);
 }
 
 .row-1,.row-2,.row-3{
@@ -216,6 +217,34 @@ body{
     grid-template-columns: 0.9fr 1.1fr;
 }
 
+/* Footer */
+.footer{
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 6.625rem;
+    padding: 6.875rem;
+}
+
+.footer .logo {
+    margin: 0 auto;
+}
+
+.footer p {
+    margin-top: 1rem;
+}
+
+.social {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.footer i {
+    font-size: 1.5rem;
+    margin: 2rem auto;
+}
 
 @media screen and (max-width:576px) {
 
@@ -230,7 +259,16 @@ body{
 }
 
 /* Banner */
-.explore{display: none;}
+.explore-inputs {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 100px;
+}
+
+.explore-inputs input,select,button {
+    width: 255px;
+}
 
 /* Popular */
 .popular{
@@ -251,6 +289,5 @@ body{
     display: flex;
     flex-direction: column;
 }
-
 
 }
